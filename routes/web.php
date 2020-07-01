@@ -13,13 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcom');
-// });
+/*
+|--------------------------------------------------------------------------
+|   Tugas    Blade Templating    AdminLTE    Table    Data-Table
+|--------------------------------------------------------------------------
 
-// Route::get('/home', function () {
-//     return view('HTML.index');
-// });
+*/
+
+Route::get('/', function () {
+    $table_title = 'Tabel Pertama';
+    $table_title2 = 'data-table';
+    $type = 'layout.card';
+    $table_1 = 'contentpage.table';
+    return view('master.master_table', compact('table_title', 'table_title2', 'type', 'table_1'));
+});
+
+Route::get('/data-table', function () {
+    $table_title = 'Data Table';
+    $table_title2 = 'Table Pertama';
+    $type = 'contentpage.datatable';
+    return view('master.master_data_table', compact('table_title', 'type', 'table_title2'));
+});
 
 // Route::get('/register', function () {
 //     return view('HTML.form');
@@ -29,6 +43,13 @@ use Illuminate\Support\Facades\Route;
 //     return view('HTML.welcome');
 // });
 
-Route::get('/', 'HomeController@home');
-Route::get('/register', 'AuthController@register');
-Route::post('/welcome', 'AuthController@welcome');
+/*
+|--------------------------------------------------------------------------
+| History   Tugas    MVC
+|--------------------------------------------------------------------------
+
+*/
+
+// Route::get('/', 'HomeController@home');
+// Route::get('/register', 'AuthController@register');
+// Route::post('/welcome', 'AuthController@welcome');
