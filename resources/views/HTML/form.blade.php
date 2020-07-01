@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>LaraTest</title>
-    </head>
+@extends('layout.app')
 
-<body>
+@section('content')
     <h1>Buat Account Baru!</h1>
     <h3>Sign Up Form</h3>
     <form action="/welcome" method="POST">
@@ -66,8 +60,4 @@
         </div>
         <input type="submit" value="Sign Up">
     </form>
-
-
-</body>
-
-</html>
+@endsection
