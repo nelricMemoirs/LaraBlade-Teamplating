@@ -3,9 +3,9 @@
 This repo was continue from yesterday task Laravel file
 change the `git remote` url to this repository with :
 
-      `git remote add newName <new repo ur>
+      git remote add newName <new repo ur>
        ....
-       git push newName master`
+      git push newName master
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
