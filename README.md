@@ -2,6 +2,7 @@
 
 This repo was continue from yesterday task Laravel file
 change the `git remote` url to this repository with :
+
       `git remote add newName <new repo ur>
        ....
        git push newName master`
